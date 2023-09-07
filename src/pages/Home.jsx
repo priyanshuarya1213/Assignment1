@@ -31,6 +31,7 @@ import Offer from "../images/offerimg.png";
 import Ellip18 from "../images/Ellipse 18.png";
 import Ellip19 from "../images/Ellipse 19.png";
 import Ellip20 from "../images/Ellipse 20.png";
+import Circle12 from "../images/circle.png";
 
 // Icon Import
 
@@ -41,7 +42,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
-import { Details } from "@mui/icons-material";
 
 const Home = () => {
   return (
@@ -149,15 +149,16 @@ const Home = () => {
       {/*************************************** How its going ***********************************/}
 
       <Box>
-        <Container sx={{ marginBottom: "10rem" }}>
+        <Container sx={{ marginBottom: "5rem" }}>
           <Typography variant="h4" sx={{ textAlign: "center" }} gutterBottom>
             <b>How it is going?</b>
+            <img src={Circle12} />
           </Typography>
           <Typography
             variant="body1"
             sx={{
               textAlign: "center",
-              marginBottom: " 2rem",
+              marginBottom: " 1rem",
               marginInline: "25%",
             }}
           >
@@ -227,7 +228,9 @@ const Home = () => {
         <Container sx={{ marginBottom: "2rem", marginInline: "10%" }}>
           <Typography variant="h4" sx={{ textAlign: "center" }} gutterBottom>
             <b>Our Services</b>
+            <img src={Circle12} />
           </Typography>
+
           <Typography
             variant="body1"
             sx={{
