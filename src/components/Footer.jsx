@@ -20,7 +20,7 @@ export default function Footer() {
       sx={{
         width: "100%",
         backgroundColor: "#00142D",
-        paddingY: 2,
+        // paddingY: 2,
         overflow: "hidden",
       }}
     >
@@ -78,7 +78,10 @@ export default function Footer() {
           </Grid>
         </Grid>
       </Container>
-      <img src={Vector2} style={{ position: "absolute", right: 0 }} />
+      <img
+        src={Vector2}
+        style={{ position: "absolute", right: 0, bottom: 0 }}
+      />
       <img src={Vector3} />
     </Box>
   );

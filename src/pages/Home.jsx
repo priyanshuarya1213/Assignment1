@@ -34,13 +34,14 @@ import Ellip20 from "../images/Ellipse 20.png";
 
 // Icon Import
 
-import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
-import EmailIcon from "@mui/icons-material/Email";
+import PhoneIcon from "@mui/icons-material/LocalPhone";
+import AttachEmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Details } from "@mui/icons-material";
 
 const Home = () => {
   return (
@@ -117,7 +118,12 @@ const Home = () => {
         }}
       >
         <Box sx={{ marginInline: "20%" }}>
-          <Grid container spacing={5}>
+          <Grid
+            container
+            spacing={5}
+            justifyContent="center"
+            alignItems="center"
+          >
             <Grid>
               <img src={Human} style={{ height: "61.5px" }} />
             </Grid>
@@ -218,7 +224,7 @@ const Home = () => {
       {/********************************** Our Services ********************************/}
 
       <Box sx={{ overflow: "hidden" }}>
-        <Container sx={{ marginBottom: "10rem", marginInline: "10%" }}>
+        <Container sx={{ marginBottom: "2rem", marginInline: "10%" }}>
           <Typography variant="h4" sx={{ textAlign: "center" }} gutterBottom>
             <b>Our Services</b>
           </Typography>
@@ -418,12 +424,12 @@ const Home = () => {
           width: "100%",
           backgroundColor: "#FFF",
           paddingY: 2,
-          marginBlock: 15,
+          marginBlock: 5,
         }}
       >
         <Typography
-          variant="h4"
-          sx={{ textAlign: "center", marginInline: "25%", marginBottom: "2%" }}
+          variant="h5"
+          sx={{ textAlign: "center", marginInline: "20%", marginBottom: "2%" }}
         >
           <b>Intelligent Websites That Work Overtime For Marketing Results </b>
         </Typography>
@@ -437,10 +443,10 @@ const Home = () => {
           <Container marginInline={2} sx={{ color: "white" }}>
             <Grid container spacing={2} sx={{ marginInline: "0px" }}>
               <Grid item xs={12} sm={6} md={3}>
-                <Typography variant="h4" sx={{ marginInline: "41%" }}>
+                <Typography variant="h4" sx={{ marginInline: "36%" }}>
                   25+
                 </Typography>
-                <Typography variant="body2" sx={{ marginInline: "40%" }}>
+                <Typography variant="body2" sx={{ marginInline: "35%" }}>
                   Years of Experience
                 </Typography>
               </Grid>
@@ -573,7 +579,7 @@ const Home = () => {
               sm={3}
               sx={{ border: "1px solid black", margin: "3rem" }}
             >
-              <img src={Photo}></img>
+              <img src={Photo} style={{ borderRadius: "50px" }}></img>
               <Typography variant="h6">
                 <b>Tim Brown</b>
               </Typography>
@@ -591,7 +597,7 @@ const Home = () => {
               sm={3}
               sx={{ border: "1px solid black", margin: "3rem" }}
             >
-              <img src={Photo2}></img>
+              <img src={Photo2} style={{ borderRadius: "50px" }}></img>
               <Typography variant="h6">
                 <b>Michael Vice</b>
               </Typography>
@@ -609,7 +615,7 @@ const Home = () => {
               sm={3}
               sx={{ border: "1px solid black", margin: "3rem" }}
             >
-              <img src={Phtot3}></img>
+              <img src={Phtot3} style={{ borderRadius: "50px" }}></img>
               <Typography variant="h6">
                 <b>Lucy Raymond</b>
               </Typography>
@@ -627,95 +633,97 @@ const Home = () => {
       </Box>
 
       {/*********************** * Contact ***************************/}
-      <Box
-        sx={{
-          width: "100%",
-          backgroundColor: "Blue",
-          paddingY: 2,
-        }}
-      >
-        <Container marginInline={2} sx={{ color: "white" }}>
-          <Grid container spacing={2} sx={{ marginInline: "0px" }}>
-            <Grid item xs={12} sm={6} md={3}>
-              <Typography variant="h4">Contacts</Typography>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Typography variant="body2" sx={{ marginInline: "10%" }}>
-                <LocalPhoneIcon /> (123)652-2344
-              </Typography>
-              <Typography variant="body2" sx={{ marginInline: "10%" }}>
-                <EmailIcon /> info@xmtechnologoies.com
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Typography variant="body2" sx={{ marginInline: "20%" }}>
-                <LocationOnIcon /> 207, Dhara trade center, Mahadev Chowk, Mota
-                varachha, Surat 394101
-              </Typography>
-            </Grid>
-            <Grid item xs={12} sm={6} md={3}>
-              <Typography variant="body2" sx={{ marginInline: "20%" }}>
-                <FacebookIcon sx={{ marginInline: "5%" }} />
-                <TwitterIcon sx={{ marginInline: "5%" }} />
-                <LinkedInIcon sx={{ marginInline: "5%" }} />
-                <InstagramIcon sx={{ marginInline: "5%" }} />
-              </Typography>
-            </Grid>
+      <Box sx={{ background: "#0669F7", color: "#FFF", padding: "5%" }}>
+        <Grid container spacing={3} sx={{ textAlign: "center" }}>
+          <Grid item xs={12} sm={6} md={3}>
+            <Box>
+              <Typography variant="h4">Contact Us</Typography>
+            </Box>
           </Grid>
-        </Container>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Box>
+              <Typography variant="body1">
+                <PhoneIcon /> + 91 4737 4839 4845 <br />
+                <AttachEmailIcon /> info@XMTechnoligies.com
+              </Typography>
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} sm={6} md={3}>
+            <Box>
+              <Typography variant="body1">
+                <LocationOnIcon /> 207, Dhara Trade Center, <br />
+                Mahadev Chowk, <br />
+                Mota Varachha, Surat <br />
+                394101
+              </Typography>
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} sm={3}>
+            <FacebookIcon sx={{ marginRight: "1rem" }} />
+            <TwitterIcon sx={{ marginRight: "1rem" }} />
+            <LinkedInIcon sx={{ marginRight: "1rem" }} />
+            <InstagramIcon sx={{ marginRight: "1rem" }} />
+            <AttachEmailIcon sx={{ marginRight: "1rem" }} />
+          </Grid>
+        </Grid>
       </Box>
-      <Box sx={{ marginBottom: "5%" }}>
-        <Paper sx={{ marginInline: "18%" }}>
-          <Typography
-            variant="h4"
-            sx={{ textAlign: "center", marginTop: "2%" }}
-            gutterBottom
-          >
-            <b>Still have questions?</b>
+
+      <Box sx={{ marginBottom: "3rem" }}>
+        <Box
+          sx={{
+            marginInline: "18%",
+            textAlign: "center",
+            marginTop: "-3%",
+            background: "#FFF",
+          }}
+        >
+          <Typography variant="h5">Still have questions ?</Typography>
+          <Typography sx={{ marginBottom: "2rem" }}>
+            We're ready to answer your questions and jump start your project
           </Typography>
-          <Typography
-            variant="body1"
-            sx={{
-              textAlign: "center",
-              marginBottom: " 2rem",
-              marginInline: "25%",
-            }}
-          >
-            We’re ready to answer your questions and jump start your project
-          </Typography>
-          <form style={{ marginInline: "10%" }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
-                <TextField fullWidth label="Name" margin="normal" />
+
+          <form>
+            <Grid container spacing={4}>
+              <Grid item xs={12} sm={6} md={4}>
+                <TextField fullWidth label="Name" variant="outlined" />
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField fullWidth label="Phone Number" margin="normal" />
+
+              <Grid item xs={12} sm={6} md={4}>
+                <TextField fullWidth label="Country" variant="outlined" />
+                {/* <Country/> */}
               </Grid>
-              <Grid item xs={12} sm={6}>
-                <TextField
-                  fullWidth
-                  label="Email"
-                  type="email"
-                  margin="normal"
-                />
+
+              <Grid item xs={12} sm={6} md={4}>
+                <TextField fullWidth label="Email" variant="outlined" />
               </Grid>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12} sm={6} md={12}>
                 <TextField
                   fullWidth
                   label="Message"
+                  variant="outlined"
                   multiline
-                  rows={4}
-                  margin="normal"
+                  rows={8}
                 />
               </Grid>
-            </Grid>
 
-            <Typography sx={{ marginInline: "40%", marginTop: "5%" }}>
-              <Button variant="contained">Send Message</Button>
-            </Typography>
+              <Button
+                variant="contained"
+                sx={{
+                  borderRadius: "2px",
+                  marginTop: "2rem",
+                  marginInline: "42%",
+                }}
+              >
+                Send Message{" "}
+              </Button>
+            </Grid>
           </form>
-        </Paper>
+        </Box>
       </Box>
+
       <Footer />
     </>
   );
