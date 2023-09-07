@@ -22,7 +22,9 @@ const navItems = [
   "About Us",
   "Portfolio",
   "Jobs",
-  <Button variant="contained">Contact us</Button>,
+  <Button variant="contained" sx={{ borderRadius: "20px" }}>
+    Contact us
+  </Button>,
 ];
 
 function Header(props) {

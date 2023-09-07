@@ -91,6 +91,7 @@ const Home = () => {
                 sx={{
                   marginTop: "10px",
                   marginInline: "10%",
+                  borderRadius: "20px",
                 }}
               >
                 Get Started
