@@ -88,7 +88,10 @@ const Home = () => {
               </Typography>
               <Button
                 variant="contained"
-                sx={{ marginTop: "10px", marginInline: "10%" }}
+                sx={{
+                  marginTop: "10px",
+                  marginInline: "10%",
+                }}
               >
                 Get Started
               </Button>

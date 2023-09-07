@@ -31,8 +31,8 @@ export default function Footer() {
               <img src={XM1}></img>
             </Typography>
             <Typography variant="body2">
-              Welcome to our camping website, your gateway to serene landscapes,
-              starlit nights, and unforgettable experiences.
+              Our technical intelligence can put you on the fast track to
+              success. That’s the promise from XM Technologies.
             </Typography>
             <Typography variant="body2">Follow us on Social media!</Typography>
             <Typography variant="body2">
@@ -47,27 +47,33 @@ export default function Footer() {
             <Typography variant="body2">Home</Typography>
             <Typography variant="body2">About Us</Typography>
             <Typography variant="body2">Services</Typography>
+            <Typography variant="body2">Portfolio</Typography>
+            <Typography variant="body2">jobs</Typography>
             <Typography variant="body2">Contact Us</Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h5">Services</Typography>
-            <Typography variant="body2">Exploration</Typography>
-            <Typography variant="body2">Accommodation</Typography>
-            <Typography variant="body2">Guided Tours</Typography>
-            <Typography variant="body2">Activities</Typography>
-            <Typography variant="body2">Adventure</Typography>
+            <Typography variant="body2">Web Devlopment</Typography>
+            <Typography variant="body2">Digital Marketing</Typography>
+            <Typography variant="body2">Application Devlopment</Typography>
+            <Typography variant="body2">E-Commerce Solution</Typography>
+            <Typography variant="body2">Backup & Security</Typography>
+            <Typography variant="body2">
+              Enterprise Software Services
+            </Typography>
+            <Typography variant="body2">IT Support</Typography>
           </Grid>
           <Grid item xs={12} sm={6} md={3}>
             <Typography variant="h5">Get in touch</Typography>
             <Typography variant="body2">
-              <LocationOnIcon /> 51, H-Block,Sector 23, Sanjay nagar, Ghaziabad,
-              Uttar Pradesh, India.
+              <LocationOnIcon /> 207, Dhara trade center, Mahadev Chowk, Mota
+              varachha, Surat, Gujarat 394101
             </Typography>
             <Typography variant="body2">
-              <LocalPhoneIcon /> (123)652-2344
+              <LocalPhoneIcon /> (281) 624-6768
             </Typography>
             <Typography variant="body2">
-              <EmailIcon /> info@xxxxx.com
+              <EmailIcon /> info@xmtechnologoies.com
             </Typography>
           </Grid>
         </Grid>
